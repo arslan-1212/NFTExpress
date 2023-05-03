@@ -1,0 +1,258 @@
+.LARToken_Main {
+  background: rgba(135, 147, 255, 0.17);
+  -webkit-backdrop-filter: blur(15.5px);
+  backdrop-filter: blur(15.5px);
+  border-radius: 11px;
+  margin-top: 20px;
+  padding: 16px;
+  padding-bottom: 40px;
+  /* background-image: radial-gradient( circle farthest-corner at 83.7% 4.3%, rgb(173 0 171 / 72%) 0%, rgb(13 60 113) 90% ); */
+}
+.LARToken_Header {
+  border-radius: 5px;
+  padding: 8px;
+  background: rgba(19, 0, 71, 0.5);
+  
+}
+.LARToken_Header h6 {
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+.NFTAddressQa .NftArt_sharebtn button {
+  position: relative;
+  border: 1px solid transparent;
+  width: 300px;
+  height: 57px;
+  border-radius: 8px;
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  color: #000;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 49px;
+  margin-left: 0;
+}
+
+.lar_fromMain {
+  width: 43%;
+  margin: auto;
+  margin-top: 60px;
+}
+.lar_inputWrper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.lar_inputWrper label {
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.lar_inputWrper input,
+.lar_inputWrper select {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.46);
+  border-radius: 5px;
+  border: none;
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+  padding-left: 10px;
+}
+.lar_inputWrper input:focus,
+.lar_inputWrper select {
+  outline: none;
+}
+
+.lar_inputWrper input::-webkit-input-placeholder {
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
+.lar_inputWrper input:-ms-input-placeholder {
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.lar_inputWrper input::placeholder {
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.lar_button {
+  margin-top: 35px;
+}
+.lar_button button:first-child {
+  background: #5138ee;
+  border-radius: 11px;
+  width: 135px;
+  height: 45px;
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #fff;
+  border: none;
+  margin-right: 20px;
+}
+.lar_button button:last-child {
+  background: #5138ee;
+  opacity: 0.28;
+  border-radius: 11px;
+  width: 135px;
+  height: 45px;
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #fff;
+  border: none;
+}
+
+/* NFT Address Qa code */
+
+.NFTAddressQa {
+  width: 360px;
+  background: rgba(255, 255, 255, 0.46);
+  border-radius: 11px;
+  padding: 26px;
+  margin-top: 20px;
+  margin-left: 63px;
+}
+
+.NFTAddressQa h6 {
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+}
+.NFTAddressQa .QA_code {
+  width: 50%;
+}
+
+.NFTQaImg {
+  text-align: center;
+}
+.NFTQaImg p {
+  margin-top: 18px;
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+}
+.LARWalletAddress h5 {
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 23px;
+  line-height: 22px;
+  color: rgba(0, 0, 0);
+}
+.LaAddressMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.LaAddressMain p {
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  color: rgba(0, 0, 0);
+  width: 50%;
+  margin-bottom: 0px;
+}
+
+.LaAddressMain img {
+  width: 20px;
+  cursor: pointer;
+}
+.lar_Network {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+  align-items: center;
+}
+.lar_Network h6 {
+  margin-bottom: 0;
+}
+.lar_Network p {
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  color: rgba(0, 0, 0);
+}
+
+.NftArt_sharebtn button {
+  width: 250px;
+  height: 51px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.NftArt_sharebtn button::before {
+  padding: 1px;
+}
+
+.CountrySelectMain span {
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}

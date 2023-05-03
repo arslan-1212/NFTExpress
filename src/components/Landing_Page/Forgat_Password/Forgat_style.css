@@ -1,0 +1,15 @@
+#forgot-ip{
+   
+        height: 700px!important;
+        background: linear-gradient(180.09deg,#162660 -10.43%,#1e74b1 19.57%,#296acd 47.66%,#1e74b1 74.16%,#1e3e6e 103.48%) !important;
+   
+}
+
+@media(max-width:1024px){
+    #forgot-ip{
+   
+        height: 2200px!important;
+        background: linear-gradient(180.09deg,#162660 -10.43%,#1e74b1 19.57%,#296acd 47.66%,#1e74b1 74.16%,#1e3e6e 103.48%) !important;
+   
+}
+}

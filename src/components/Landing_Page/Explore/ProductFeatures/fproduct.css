@@ -1,0 +1,82 @@
+
+#productfeatures{
+    max-width: 1100px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.product-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+}
+.product-box{
+    width:350px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-image: url(images/pebg.png);
+    padding: 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.profile-img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: #ffffff;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: #979797;
+    font-size: 0.8rem;
+}
+.reviews{
+    color: #f9d71c;
+}
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}.product-comment h3{
+    color: #fff;
+}
+.product-comment p{
+    font-size: 0.9rem;
+    color: #ffffff;
+    letter-spacing: 0.1rem;
+}
+@media(max-width:600px){
+    #productfeatures{
+        padding-top: 0px;
+    }
+}

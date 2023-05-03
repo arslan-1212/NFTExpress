@@ -1,0 +1,119 @@
+@media screen and (max-width: 600px) {
+  .colMb {
+    margin-bottom: 10px;
+    /* width: 100%; */
+  }
+
+  .LADChatWidgetMain {
+    width: 99%;
+    /* display: inline-block; */
+    margin-left: 4px;
+    background-color: re;
+  }
+
+  .HomeMian .RowMb {
+    margin-bottom: 0;
+  }
+  .TimeWidgetFlex,
+  .AffiliateMain .CopyText {
+    flex-direction: column;
+  }
+
+  .TimeWidgetFlex .TimeWidgetLeft {
+    margin-bottom: 15px;
+  }
+  .AffiliateMain .CopyText input,
+  .AffiliateMain .CopyText button {
+    width: 100%;
+    box-shadow: none;
+    outline: none;
+    border: none;
+  }
+
+  .HorseProgressMain {
+    margin-top: 14px;
+    margin-bottom: 50px;
+  }
+  .HorseProgressMain p {
+    line-height: 19px;
+  }
+  /* Complete Home Page */
+
+  .Nft_Items .NftcolMb {
+    flex: none !important;
+  }
+  .NftcolMb {
+    margin-bottom: 15px;
+  }
+
+  .Nft_cardMain img {
+    width: 100%;
+  }
+
+  .Nft_cardMain {
+    padding: 23px;
+    width: 100%;
+  }
+
+  .NftMain .NftArt {
+    margin-left: 0px !important;
+  }
+  .NftMain .NftArt_Count,
+  .NftMain .BUSD_Mian {
+    justify-content: center;
+  }
+  .NftMain .NftArt_text {
+    margin-left: 20px;
+  }
+
+  .NftMain .NftArt_sharebtn button {
+    width: 100%;
+  }
+
+  /*  */
+
+  .MintingHeader,
+  .MintingHeader_right {
+    flex-direction: column-reverse;
+    margin-bottom: 10px;
+  }
+  .MintingHeader_left {
+    margin-bottom: 10px;
+  }
+  .mint_homeicn {
+    display: none;
+  }
+  .MintingHeader input,
+  .MintingHeader_left button.mintsibmit {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .MintingHeader_left button.mintsibmit {
+    margin-top: 10px;
+  }
+
+  .MintingHeader_left img.mintArrows {
+    display: none;
+  }
+
+  .TreeImgMian img {
+    width: 100% !important;
+  }
+
+  /*  */
+
+  .lar_fromMain {
+    width: 100% !important;
+    margin-top: 33px !important;
+  }
+
+  /* nft address */
+
+  .NFTAddressQa {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .NftArt_sharebtn button {
+    width: 100% !important;
+  }
+}

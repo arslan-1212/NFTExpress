@@ -1,0 +1,9 @@
+.otp-ip{
+    height: 700px !important;
+}
+
+@media(max-width:1010px){
+    .otp-ip{
+        height: 2200px !important;
+    }
+}

@@ -1,0 +1,326 @@
+.NftMain {
+  /* background: rgba(135, 147, 255, 0.17); */
+  backdrop-filter: blur(15.5px);
+  border-radius: 11px;
+  margin-top: 20px;
+  padding: 16px;
+  padding-bottom: 40px;
+  background-image: radial-gradient( circle farthest-corner at 83.7% 4.3%, rgb(173 0 171 / 72%) 0%, rgb(13 60 113) 90% );
+
+}
+
+.Nft_header {
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.Nft_header h6 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.Nft_cardMain {
+  /* background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
+  padding: 10px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+ */
+
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  padding: 4px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 100%;
+  /* background-image: radial-gradient( circle farthest-corner at 83.7% 4.3%, rgb(173 0 171 / 72%) 0%, rgb(13 60 113) 90% ); */
+}
+
+.Nft_cardMain img {
+  border-radius: 10px;
+  height: 162px;
+}
+.Nft_cardMain video {
+  width: 100%;
+  height: 145px;
+  position: relative;
+  top: 4px;
+}
+.CollectionMain img {
+  height: auto;
+}
+.Nft_cardMain:hover {
+  box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+}
+
+.Nft_cardMain h6 {
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+.Nft_cardMain p {
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(235, 235, 245, 0.6);
+}
+.nftsPrice {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  align-items: center;
+}
+
+.nftsPrice span:first-child {
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.24px;
+  color: #ffffff;
+}
+.cardmaina{
+  display: inline-block;
+  /* margin: 10px  !important; */
+}
+/* background-image: radial-gradient( circle farthest-corner at 83.7% 4.3%, rgb(173 0 171 / 72%) 0%, rgb(13 60 113) 90% ); */
+
+.nftsPrice span:last-child {
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.066px;
+  color: white !important;
+}
+
+.CoupleNFT {
+  margin-top: 30px;
+}
+
+/* collection  */
+.Nft_cardMain{
+  margin-top: 1rem !important;
+}
+
+.CollectionMain .Nft_cardMain img:first-child {
+  width: 100%;
+}
+.CollectionMain .Nft_cardMain .nftsPrice span:last-child {
+  display: flex;
+}
+.CollectionMain .Nft_cardMain .nftsPrice span:last-child img {
+  margin-right: 2px;
+}
+
+.NftArt {
+  margin-left: 30px;
+  margin-top: 13px;
+}
+
+.NftArt_Count {
+  display: flex;
+  gap: 10px;
+}
+.NftArt_Count button {
+  background: linear-gradient(150.49deg, #5350ef -15.41%, #5e5e7b 133.55%);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  width: 62px;
+  height: 50px;
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.58);
+  border: none;
+}
+.NftArt_CountOutout {
+  width: 148px;
+  height: 50px;
+  background: linear-gradient(150.49deg, #5350ef -15.41%, #5e5e7b 133.55%);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.58);
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BUSD_Mian {
+  display: flex;
+  gap: 10px;
+  margin-top: 22px;
+  flex-direction: column;
+}
+.BUSD_Mian button {
+  width: 410px !important;
+  height: 50px;
+  background: linear-gradient(150.49deg, #5350ef -15.41%, #5e5e7b 133.55%);
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.BUSD_text select {
+  background: linear-gradient(150.49deg, #5350ef -15.41%, #5e5e7b 133.55%);
+  border-radius: 6px;
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  width: 410px !important;
+  height: 50px;
+  color: rgba(255, 255, 255, 0.93);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* -webkit-appearance: none; */
+  /* -moz-appearance: none; */
+  background: transparent;
+  background-image: url("../images/ArrowDown.png");
+  background-repeat: no-repeat;
+  background-position-x: 96%;
+  background-position-y: 16px;
+  border-radius: 2px;
+}
+@media screen and (max-width: 800px) {
+  .BUSD_Mian button{
+    width: 100% !important;
+  }
+  .BUSD_text select{
+    width: 100% !important;
+  }
+}
+.BUSD_text select option {
+  background: #5350ef;
+}
+
+.BUSD_count button {
+  width: 62px;
+  height: 50px;
+  background: linear-gradient(150.49deg, #5350ef -15.41%, #5e5e7b 133.55%);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  border: none;
+}
+.NftArt_text {
+  margin-top: 20px;
+}
+.NftArt_text h6:first-child {
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+.NftArt_text h6:last-child {
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+.NftArt .NftArt_sharebtn button {
+  position: relative;
+  border: 1px solid transparent;
+  width: 380px;
+  height: 64px;
+  border-radius: 8px;
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 49px;
+  margin-left: 0;
+}
+
+.NftArt_sharebtn button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  padding: 2px;
+  background: linear-gradient(92.62deg, #5350ef 50.92%, #ff00f5 150.24%);
+  /* -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); */
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.CollectionMain .CollectionCrdImg {
+  height: 200px;
+}
+.CollectionMain .CollectionCrdvid {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+}
+.nftsPrice {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .Nft_cardMain img {
+    height: 200px;
+  }
+  .Nft_cardMain video {
+    width: 100%;
+    height: 200px;
+  }
+  .Nft_cardMain h6 {
+    font-size: 16px;
+  }
+  .Nft_cardMain p {
+    font-size: 16px;
+  }
+  .CollectionMain .Nft_cardMain .nftsPrice span:last-child img {
+    height: 15px;
+  }
+}

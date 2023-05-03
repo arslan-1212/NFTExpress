@@ -1,0 +1,26 @@
+.footer-section{
+    background-color: rgb(45,21,103);
+}
+
+@media screen and (max-width:600px) {
+    .footer-section{
+        text-align: center;
+    }
+
+    .footer-link-item h5{
+        margin-top: 17px;
+    }
+}
+
+.footer-link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer {
+    position: relative !important;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}

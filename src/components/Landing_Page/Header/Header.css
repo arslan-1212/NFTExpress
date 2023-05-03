@@ -1,0 +1,323 @@
+/* .home img{
+    width: 200px;
+}
+
+.nev{
+    color: white !important;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    background-color: rgb(45,21,103);
+}
+
+.alna{
+    margin-left: 4rem;
+}
+
+.hxn{
+    margin-right: 15px;
+}
+
+@media screen and (max-width:800px) {
+    .alna{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .emn{
+        text-align: center;
+    }
+}
+
+@media (min-width:800px) and (max-width:1024px) {
+
+    .alna{
+        margin-left: .5rem;
+    }
+    
+    .hxn{
+        margin-right: 0px;
+    }
+
+    .wallet{
+        margin-right: 2px !important;
+        font-size: 16px !important;
+    }
+}
+
+.wallet{
+    color: chocolate !important;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+ */
+
+ /* .Styelnone{
+    text-decoration: none !important;
+ }
+
+ .header-area {
+    background: transparent;
+    padding: 0px 0px 0px !important;
+    position: relative;
+    margin-bottom: -110px !important;
+    z-index: 2;
+    border-bottom: 1px solid#2D305B;
+    background-color: transparent !important;
+    background: transparent !important;
+}
+ @media screen and (max-width:2500px) {
+    .cryptozen_menu ul li a {
+        padding: 17px 5px !important;
+        background-color: transparent !important;
+    }
+ }
+
+ .sticky-nav {
+    left: 0;
+    margin: auto;
+    top: 0;
+    width: 100%;
+    position: fixed!important;
+    box-shadow: 0 0 60px 0 rgb(0 0 0 / 7%);
+    -webkit-animation: 300ms running fadeInDown;
+    animation: 500ms running fadeInUp;
+    -webkit-box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
+    transition: .5s !important;
+    background: #010039!important;
+    z-index: 9999 !important;
+    animation-name: slideInDown;
+    animation-duration: 1.5s;
+}
+.mean-container .mean-bar {
+    background: #37A3FE;
+    float: left;
+    min-height: 60px;
+    padding: 66px 0 0 !important;
+    position: relative;
+    width: 100%;
+    z-index: 999999;
+}
+
+.mean-container .mean-bar::before {
+    color: #fff;
+    content: "NFT Xpress";
+    font-size: 50px !important;
+    font-weight: 800;
+    left: 10px;
+    position: absolute;
+    top: 18px;
+}
+.mean-container a.meanmenu-reveal {
+    color: #fff;
+    margin-top: -3.5rem !important;
+}
+.mean-container a.meanmenu-reveal {
+    width: 55px !important;
+    height: -15px;
+    padding: 18px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    text-indent: -9999em;
+    line-height: 22px;
+    font-size: 1px;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    float: right;
+}
+
+.mean-container a.meanmenu-reveal span {
+    display: block;
+    background: #fff;
+    height: 12px !important;
+    margin-top: 7px !important;
+} */
+
+
+
+
+
+/*==Navigation=====================================*/
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  background-color: transparent;
+  transition: 0.6s ease-in-out;
+}
+nav.active{
+    box-shadow: 5px 10px 30px rgba(4, 0, 255, 0.337);
+    background-color: #ffffff;
+    position: sticky;
+    color: #000 !important;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.nav-anchors.active{
+    color: #000 !important;
+}
+.nav-imgs{
+    display: flex;
+}
+.nav-imgs li{
+    margin: 15px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu li a{
+    padding: 3px 10px;
+    margin: 0px 15px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    transition: all ease 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.logo{
+    width: 120px;
+}
+.menu li a:hover,
+.menu .active{
+    color: #0E76BC;
+    transition: all ease 0.3s;
+}
+
+.menu-icon,
+.menu-btn{
+    display: none;
+}
+
+.nav-btn{
+    width:170px;
+    height: 48px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    background:#0F3380 ;
+    color: #fff;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 3px transparent;
+}
+.nav-btn:hover{
+    color: #fff !important;
+}
+.nav-btns .active-btn-header{
+    background-color: #1E74B1;
+    border: none;
+}
+
+/*******************/
+@media(max-width:965px){
+    .navigation{
+        justify-content: space-between;
+        height: 65px;
+        padding: 35px 25px;
+        width: 100%;
+    }
+    .logo{
+        font-size: 1.2rem;
+    }
+    .nav-imgs{
+        display: none;
+    }
+    .navigation .menu{
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0px;
+        z-index: 100;
+        background-color: #054a7b;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        border-bottom: 1px solid rgba(245,245,245);
+    }
+    .navigation .menu li{
+        width: 100%;
+        padding: 0px;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .navigation .menu li a{
+        height: 40px;
+        display: flex;
+        align-items: center;
+        padding: 30px 20px;
+        margin: 10px;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .navigation .menu-icon{
+        cursor: pointer;
+        float: right;
+        padding: 5px;
+        position: relative;
+        user-select: none;
+        z-index: 2;
+    }
+    .navigation .menu-icon .nav-icon{
+        background-color: #000000cc;
+        display: block;
+        height: 2px;
+        width: 25px;
+        position: relative;
+        transition: background 0.2s ease-out;
+    }
+    .navigation .menu-icon .nav-icon::before,
+    .navigation .menu-icon .nav-icon::after{
+        background-color: #000000cc;
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: all ease-out 0.2s;
+    }
+    .navigation .menu-icon .nav-icon::before{
+        top: 7px;
+    }
+    .navigation .menu-icon .nav-icon::after{
+        top: -7px;
+    }
+    .navigation .menu-btn:checked ~ .menu-icon .nav-icon::before{
+        transform: rotate(-45deg);
+        top: 0px;
+    }
+    .navigation .menu-btn:checked ~ .menu-icon .nav-icon::after{
+        transform: rotate(45deg);
+        top: 0px;
+    }
+    .navigation .menu-btn:checked ~ .menu-icon .nav-icon{
+        background-color: transparent;
+    } 
+    .navigation .menu-btn:checked ~ .menu{
+        display: block;
+    }
+}
+
+/* .navigation{
+    height: 130px;
+} */

@@ -1,0 +1,200 @@
+{
+  "MintNFT": [
+    {
+      "name": "Mint",
+      "className": "nav-link",
+      "url": "/mint_nft"
+    },
+    {
+      "name": "Collection",
+      "className": "nav-link",
+      "url": "/collection"
+    },
+    {
+      "name": "Minting History",
+      "className": "nav-link",
+      "url": "/minting_history"
+    },
+    {
+      "name": "Staking / LAG Airdrop",
+      "className": "nav-link",
+      "url": "/staking_nft"
+    },
+    {
+      "name": " NFT Staking History",
+      "className": "nav-link",
+      "url": "/nft_staking_history"
+    },
+    {
+      "name": "LAG Airdrop  History",
+      "className": "nav-link",
+      "url": "/lag_airdrop_token"
+    }
+  ],
+  "TeamDetails": [
+    {
+      "name": "My Referral",
+      "className": "nav-link",
+      "url": "/my_referral"
+    },
+    {
+      "name": "My Team",
+      "className": "nav-link",
+      "url": "/my_Team"
+    },
+    {
+      "name": "Matching Tree",
+      "className": "nav-link",
+      "url": "/matching_tree"
+    },
+    {
+      "name": "Level Details",
+      "className": "nav-link",
+      "url": "/level_details"
+    },
+    {
+      "name": "Direct Leg Business",
+      "className": "nav-link",
+      "url": "/direct_leg_business"
+    }
+  ],
+  "AllIncome": [
+    {
+      "name": "Referral Income",
+      "className": "nav-link",
+      "url": "/referral_income"
+    },
+    {
+      "name": "Quick Starter Bonus",
+      "className": "nav-link",
+      "url": "/quick_starter"
+    },
+    {
+      "name": "Team Bonus",
+      "className": "nav-link",
+      "url": "/team_bonus"
+    },
+    {
+      "name": " Matching Level Income",
+      "className": "nav-link",
+      "url": "/matching_level_income"
+    },
+    {
+      "name": "",
+      "className": "nav-link",
+      "url": "/withdrawal_share_bonus"
+    },
+    {
+      "name": "Reward Income",
+      "className": "nav-link",
+      "url": "/withdrawal_Income"
+    },
+    {
+      "name": "LAG Token",
+      "className": "nav-link",
+      "url": "/address_lag"
+    },
+    {
+      "name": "",
+      "className": "nav-link",
+      "url": "/sports_bonus"
+    },
+    {
+      "name": "NFT Staking Income",
+      "className": "nav-link",
+      "url": "/nft_staking_income"
+    }
+  ],
+  "Generate_Coupon": [
+    {
+      "name": "Generate Coupon",
+      "className": "nav-link",
+      "url": "/Generate_Coupon"
+    },
+    {
+      "name": "Add Fund In Coupon",
+      "className": "nav-link",
+      "url": "/Add_Coupon"
+    },
+    {
+      "name": "Transfer Coupon Fund",
+      "className": "nav-link",
+      "url": "/Transfer_Coupon"
+    },
+    {
+      "name": "Recieve Coupon History",
+      "className": "nav-link",
+      "url": "/Recieve_Coupon_History"
+    },
+    {
+      "name": "Mint With Coupon Wallet History",
+      "className": "nav-link",
+      "url": "/Mint_Coupon_wallet_History"
+    }
+   
+    
+  ],
+  "Withdrawal": [
+    {
+      "name": "LAR Token",
+      "className": "nav-link",
+      "url": "/lar_token"
+    },
+    {
+      "name": "LAR Token History",
+      "className": "nav-link",
+      "url": "/lar_token_history"
+    },
+    {
+      "name": "LAG Token",
+      "className": "nav-link",
+      "url": "/lag_token"
+    },
+    {
+      "name": "LAG Token History",
+      "className": "nav-link",
+      "url": "/lag_token_history"
+    }
+  ],
+  "Address": [
+    {
+      "name": "Self",
+      "className": "nav-link",
+      "url": "/self"
+    },
+    {
+      "name": "LAR",
+      "className": "nav-link",
+      "url": "/governance_token"
+    },
+    {
+      "name": "LAG",
+      "className": "nav-link",
+      "url": "/game_reward"
+    },
+    {
+      "name": "NFT",
+      "className": "nav-link",
+      "url": "/nft_token"
+    }
+  ],
+  "users": [
+    {
+      "name": "Profile",
+      "className": "nav-link",
+      "url": "/profile"
+    },
+    {
+      "name": "Security",
+      "className": "nav-link",
+      "url": "/security"
+    }
+  ],
+  "tutorial": [
+    {
+      "name": "Tutorial",
+      "className": "nav-link",
+      "url": "/tutorial"
+    }
+  ]
+}

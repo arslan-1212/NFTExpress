@@ -1,0 +1,138 @@
+.HeaderMain {
+  margin-top: 13px;
+}
+
+.HeaderMain .h_logo {
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.h_right {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  justify-content: space-between;
+}
+.h_icon img {
+  padding: 0px 10px;
+}
+
+.h_left {
+  background-image: url("../images/borderImage.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-bottom: 4px;
+  position: relative;
+}
+.h_left img {
+  width: 15px;
+  padding-right: 2px;
+}
+.icons-bg{
+height: 28px;
+background-image: radial-gradient( circle farthest-corner at 83.7% 4.3%, rgb(173 0 171 / 72%) 0%, rgb(13 60 113) 90% );
+border-radius: 20px;
+padding: 3px;
+margin-left: 47px;
+cursor: pointer;
+}
+.h_left input {
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.4);
+  border: none;
+  background: transparent;
+  border-radius: 0px;
+  outline: none;
+  text-align: center;
+}
+
+.h_icon{
+margin-left: -364px;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1400px) {
+  .mobile-icons,.mobile-icons-bg {
+  display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .mobile-icons,.mobile-icons-bg {
+  display: none;
+  }
+}
+@media screen and (min-width: 900px) {
+  .mobile-icons,.mobile-icons-bg {
+  display: none;
+  }
+}
+@media screen and (min-width: 800px) {
+  .mobile-icons,.mobile-icons-bg {
+  display: none;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .mobile-icons,.mobile-icons-bg {
+  display: none;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .mobile-icons{
+    display: flex;
+    position: absolute;
+    left: 150px;
+    top: 22px;
+  }
+  .mobile-icons-bg{
+    height: 23px;
+    margin-left: 5px;
+    background-image: radial-gradient( circle farthest-corner at 83.7% 4.3%, rgb(173 0 171 / 72%) 0%, rgb(13 60 113) 90% );
+    border-radius: 13px;
+    padding: 0 2px;
+    
+  }
+
+
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+  .mobile-icons{
+    display: flex;
+    position: absolute;
+    left: 150px;
+    top: 22px;
+  
+  }
+  .mobile-icons-bg{
+    height: 23px;
+    margin-left: 5px;
+    background-image: radial-gradient( circle farthest-corner at 83.7% 4.3%, rgb(173 0 171 / 72%) 0%, rgb(13 60 113) 90% );
+    border-radius: 13px;
+    padding: 0 2px;
+ 
+  }
+
+}
+

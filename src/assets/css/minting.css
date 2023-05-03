@@ -1,0 +1,77 @@
+.MintingHistory_Main {
+  /* background: rgba(135, 147, 255, 0.17); */
+  -webkit-backdrop-filter: blur(15.5px);
+  backdrop-filter: blur(15.5px);
+  border-radius: 11px;
+  margin-top: 20px;
+  padding: 16px;
+  padding-bottom: 40px;
+  /* background-image: radial-gradient( circle farthest-corner at 83.7% 4.3%, rgb(173 0 171 / 72%) 0%, rgb(13 60 113) 90% ); */
+  background: #130047
+}
+
+.MintingHeader {
+  border-radius: 5px;
+  padding: 8px;
+  background: rgba(19, 0, 71, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.MintingHeader input {
+  background: rgba(255, 255, 255, 0.46);
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  width: 130px;
+  height: 30px;
+  color: #000000;
+  border: none;
+  border-radius: 6px;
+  margin-left: 20px;
+}
+.mint_homeicn {
+  width: 20px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.MintingHeader_left button.mintsibmit {
+  width: 75px;
+  height: 31px;
+  background: #5138ee;
+  border-radius: 11px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+img.mintArrows {
+  width: 22px;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+.Minting_statue_item {
+  display: flex;
+  align-items: center;
+  font-family: "sans-serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #fff;
+  gap: 6px;
+}
+.MintingHeader_right {
+  display: flex;
+  gap: 15px;
+}
+.TreeImgMian {
+  text-align: center;
+}

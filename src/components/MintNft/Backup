@@ -1,0 +1,341 @@
+ let wirePrices = await nftContractOf.methods.getMint5_Val().call();
+        let mintingPriceBNB = await nftContractOf.methods
+          .MinitngPricein_busd()
+          .call();
+        wirePrices = web3.utils.fromWei(wirePrices);
+        let add_Value_in_BNB = await nftContractOf.methods
+          .Valueinbnb_single()
+          .call();
+
+        let add_Value_in = web3.utils.fromWei(add_Value_in_BNB.toString());
+        mintingPriceBNB = web3.utils.fromWei(mintingPriceBNB);
+        mintingPriceBNB = Number(mintingPriceBNB);
+        mintingPriceBNB = parseFloat(mintingPriceBNB).toFixed(4);
+
+        let Mint_Value_WithOut_Wire =
+          Number(add_Value_in) + Number(increment_each_data);
+        Mint_Value_WithOut_Wire = parseFloat(Mint_Value_WithOut_Wire).toFixed(
+          4
+        );
+
+        if (singlenft.minting_counter == 1) {
+          mintingPriceBNB = ` ${mintingPriceBNB * value} wire ${parseFloat(
+            wirePrices * value
+          ).toFixed(4)}`;
+          // arr = [...PriceArray]
+          // arr[3].price = mintingPriceBNB
+          arr.push({
+            name: "BUSD And WIRE",
+            price: mintingPriceBNB,
+          });
+          Mint_Value_WithOut_Wire = Mint_Value_WithOut_Wire * value;
+          // setSelectedValue({ ...selectedValue, price: mintingPriceBNB })
+
+          // setPriceArray(arr)
+          //    console.log("Mint_Value_WithOut_Wire", Mint_Value_WithOut_Wire);
+
+          // setToken_Value_BNB_Without_wire(Mint_Value_WithOut_Wire)
+          // setToken_Value_BNB(mintingPriceBNB)
+        } else if (singlenft.minting_counter == 2) {
+          mintingPriceBNB = ` ${mintingPriceBNB * 2 * value} wire ${parseFloat(
+            wirePrices * 2 * value
+          ).toFixed(4)}`;
+          // arr = [...PriceArray]
+          // arr[3].price = mintingPriceBNB
+          arr.push({
+            name: "BUSD And WIRE",
+            price: mintingPriceBNB,
+          });
+          // setSelectedValue({ ...selectedValue, price: mintingPriceBNB })
+
+          // setPriceArray(arr)
+          // setToken_Value_BNB(mintingPriceBNB * 2)
+          // setToken_Value_BNB_Without_wire(Mint_Value_WithOut_Wire * 2)
+        }
+
+        let mintingPriceBUSD = await nftContractOf.methods
+          .MinitngPricein_busd()
+          .call();
+
+        mintingPriceBUSD = web3.utils.fromWei(mintingPriceBUSD);
+
+        let Value_IN_BUSD = value == 1 ? 20 : parseFloat(value) * 20;
+
+        mintingPriceBUSD = parseFloat(mintingPriceBUSD).toFixed(4);
+        if (
+          (singlenft.count == 100 && singlenft.minting_counter == 1) ||
+          (singlenft.count == 200 && singlenft.minting_counter == 2)
+        ) {
+          if (singlenft.minting_counter == 1) {
+            mintingPriceBUSD = ` ${
+              mintingPriceBUSD * value
+            } Income ${Value_IN_BUSD}`;
+            // arr = [...PriceArray]
+            arr.push({
+              name: "BUSD And Income",
+              price: mintingPriceBUSD,
+            });
+
+            // setSelectedValue({ ...selectedValue, price: mintingPriceBUSD })
+
+            setPriceArray(arr);
+            // Value_IN_BUSD = Value_IN_BUSD * value
+
+            // setToken_Value_BUSD_Without_wire(Value_IN_BUSD)
+            // setToken_Value_BUSD(mintingPriceBUSD)
+          } else if (singlenft.minting_counter == 2) {
+            mintingPriceBUSD = ` ${mintingPriceBUSD * value * 2} Income ${
+              Value_IN_BUSD * 2
+            }`;
+            // console.log("mintingPriceBUSD", mintingPriceBUSD*2);
+            // setToken_Value_BUSD_Without_wire(Value_IN_BUSD * 2)
+            // arr = [...PriceArray]
+            // arr[4].price = mintingPriceBUSD
+            arr.push({
+              name: "BUSD And Income",
+              price: mintingPriceBUSD,
+            });
+            // setSelectedValue({ ...selectedValue, price: mintingPriceBUSD })
+
+            setPriceArray(arr);
+            // setToken_Value_BUSD(mintingPriceBUSD * 2)
+          }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      // Collection 500 contract------------------------------------------------------------
+      let walletOfOwner_500 = await nftContractOf500.methods
+        .WalletOfOwner(acc)
+        .call();
+      let walletLength_500 = walletOfOwner_500.length;
+
+      // console.log("walletOfOwner", walletOfOwner);
+      console.log("walletLength_500", walletLength_500);
+      for (let i = 0; i < walletLength_500; i++) {
+        console.log("check", i);
+
+        try {
+          let res = await axios.get(
+            `https://gold-obvious-sparrow-517.mypinata.cloud/ipfs/QmNXqrYqEFQSfabiufinFwmwkGC8Q5r5Cp5cS3WLGi24zW/${walletOfOwner_500[i]}.png`
+          );
+          // let res = await axios.get(`/config/${walletOfOwner[i]}.json`)
+          let imageUrl = res.config.url;
+          // console.log("check",res);
+          let tokenid = walletOfOwner_500[i];
+          let title;
+          if (tokenid == 0) {
+            title = "Male";
+          } else if (tokenid % 2 == 0) {
+            title = "Male";
+          } else {
+            title = "Female";
+          }
+
+          simplleArray = [
+            ...simplleArray,
+            {
+              imageUrl: imageUrl,
+              tokenid: tokenid,
+              title: title,
+              token_value: "500",
+            },
+          ];
+
+          setImageArray(simplleArray);
+        } catch (e) {
+          console.log("Error while Fetching Api", e);
+        }
+      }
+
+      //   Collection 1000 Contract-----------------
+
+      let walletOfOwner_1000 = await nftContractOf1000.methods
+        .WalletOfOwner(acc)
+        .call();
+      let walletLength_1000 = walletOfOwner_1000.length;
+
+      // console.log("walletOfOwner_1000", walletOfOwner_1000);
+      console.log("walletOfOwner_1000", walletOfOwner_1000);
+      for (let i = 0; i < walletLength_1000; i++) {
+        console.log("check", i);
+
+        try {
+          let res = await axios.get(
+            `https://silver-general-constrictor-271.mypinata.cloud/ipfs/QmPtWQfYpKcH4NtZBzvFhi6UCwuXq4FTfMeB4DpAqw1gF9/${walletOfOwner_1000[i]}.jpg`
+          );
+          // let res = await axios.get(`/config/${walletOfOwner[i]}.json`)
+          let imageUrl = res.config.url;
+          // console.log("check",res);
+          let tokenid = walletOfOwner_1000[i];
+          let title;
+          if (tokenid == 0) {
+            title = "Male";
+          } else if (tokenid % 2 == 0) {
+            title = "Male";
+          } else {
+            title = "Female";
+          }
+
+          simplleArray = [
+            ...simplleArray,
+            {
+              imageUrl: imageUrl,
+              tokenid: tokenid,
+              title: title,
+              token_value: "1000",
+            },
+          ];
+
+          setImageArray(simplleArray);
+        } catch (e) {
+          console.log("Error while Fetching Api", e);
+        }
+      }
+
+      //   Collection 2500 Contract-----------------
+
+      let walletOfOwner_2500 = await nftContractOf2500.methods
+        .WalletOfOwner(acc)
+        .call();
+      let walletLength_2500 = walletOfOwner_2500.length;
+
+      // console.log("walletOfOwner", walletOfOwner);
+      console.log("walletLength_2500", walletLength_2500);
+      for (let i = 0; i < walletLength_2500; i++) {
+        console.log("check", i);
+
+        try {
+          let res = await axios.get(
+            `https://white-known-monkey-977.mypinata.cloud/ipfs/QmWNWov1X4h4hScS9qkETu3sV6YupNy7sUdy6mCbmT25QB/${walletOfOwner_2500[i]}.jpg`
+          );
+          // let res = await axios.get(`/config/${walletOfOwner[i]}.json`)
+          let imageUrl = res.config.url;
+          // console.log("check",res);
+          let tokenid = walletOfOwner_2500[i];
+          let title;
+          if (tokenid == 0) {
+            title = "Male";
+          } else if (tokenid % 2 == 0) {
+            title = "Male";
+          } else {
+            title = "Female";
+          }
+
+          simplleArray = [
+            ...simplleArray,
+            {
+              imageUrl: imageUrl,
+              tokenid: tokenid,
+              title: title,
+              token_value: "2500",
+            },
+          ];
+
+          setImageArray(simplleArray);
+        } catch (e) {
+          console.log("Error while Fetching Api", e);
+        }
+      }
+      let walletOfOwner_5000 = await nftContractOf5000.methods
+        .WalletOfOwner(acc)
+        .call();
+      let walletLength_5000 = walletOfOwner_5000.length;
+
+      // console.log("walletOfOwner", walletOfOwner);
+      console.log("walletLength_5000", walletLength_5000);
+      for (let i = 0; i < walletLength_5000; i++) {
+        console.log("check", i);
+
+        try {
+          let res = await axios.get(
+            `https://red-cheap-carp-311.mypinata.cloud/ipfs/QmPjjYgEtxG94gqc8PU2vi7g1f45XtsbtpW4L6EqCBMtEv/${walletOfOwner_5000[i]}.gif`
+          );
+          // let res = await axios.get(`/config/${walletOfOwner[i]}.json`)
+          let imageUrl = res.config.url;
+          // console.log("check",res);
+          let tokenid = walletOfOwner_5000[i];
+          let title;
+          if (tokenid == 0) {
+            title = "Male";
+          } else if (tokenid % 2 == 0) {
+            title = "Male";
+          } else {
+            title = "Female";
+          }
+
+          simplleArray = [
+            ...simplleArray,
+            {
+              imageUrl: imageUrl,
+              tokenid: tokenid,
+              title: title,
+              token_value: "5000",
+            },
+          ];
+
+          setImageArray(simplleArray);
+        } catch (e) {
+          console.log("Error while Fetching Api", e);
+        }
+      }
+
+      let walletOfOwner_income_100 = await nftContractOf_income_100.methods
+        .WalletOfOwner(acc)
+        .call();
+      let walletLength_income_100 = walletOfOwner_income_100.length;
+
+      // console.log("walletOfOwner", walletOfOwner_income_100);
+      // console.log("walletLength_income_100", walletLength_income_100);
+      for (let i = 0; i < walletLength_income_100; i++) {
+        // console.log("check", i);
+
+        try {
+          let res = await axios.get(
+            `https://red-tiny-piranha-757.mypinata.cloud/ipfs/QmRbAT5pH13uorxVw3vQKYCLXABBu5zPq7r4LWXKZFZ1mq/1000${walletOfOwner_income_100[i]}.png`
+          );
+          // let res = await axios.get(`/config/${walletOfOwner[i]}.json`)
+          let imageUrl = res.config.url;
+          // console.log("check",res);
+          let tokenid = `1000${walletOfOwner_income_100[i]}`;
+          let title;
+          if (tokenid == 0) {
+            title = "Male";
+          } else if (tokenid % 2 == 0) {
+            title = "Male";
+          } else {
+            title = "Female";
+          }
+          simplleArray = [
+            ...simplleArray,
+            {
+              imageUrl: imageUrl,
+              tokenid: tokenid,
+              title: title,
+              token_value: "100 Income",
+            },
+          ];
+
+          setImageArray(simplleArray);
+        } catch (e) {
+          console.log("Error while Fetching Api", e);
+        }
+      }

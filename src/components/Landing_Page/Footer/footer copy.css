@@ -1,0 +1,218 @@
+
+/*==Footer=================*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 20px 0px;
+}
+.footer-container{
+    width: 100%;
+    max-width: 980px;
+    margin: auto;
+}
+.footer-container-flex{
+    display: flex;
+}
+.footer-heading{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.footer-social ul{
+    display: flex;
+    margin-top: 15px;
+}
+.footer-social ul li{
+    margin: 10px;
+}
+.footer-heading h3{
+    font-size: 5rem;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer-heading h4{
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    width: 70%;
+}
+.footer-box strong{
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+.footer-box ul{
+    margin-top: 15px;
+}
+.footer-box ul li a,
+.footer-box ul li{
+    color: #ffffff;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    padding: 2px 0px;
+    transition: all ease 0.3s;
+}
+.footer-box ul li img{
+    padding-right: 5px;
+}
+.footer-box ul li{
+    display: flex;
+    margin: 8px 0px;
+    align-items: center;
+}
+.footer-box ul li:hover,
+.footer-box ul li a:hover{
+    opacity: 0.6;
+    transition: all ease 0.3s;
+}
+.footer-bottom{
+    border-top: 1px solid #ffffff;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    padding-top: 20px;
+    justify-content: space-evenly;
+    color: #fff;
+}
+
+
+
+.subcribe-container{
+    width:100%;	
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgba(0,0,0,0.03);
+    }
+    .subcribe-container h3{
+    font-size: 2rem;
+    color: rgb(250, 250, 250);
+    margin-bottom: 15px;
+    }
+
+.subcribe-input{
+    width:500px;
+    background-color: rgba(0, 0, 0, 0.235);
+    border-radius: 7% 7% 7% 7% / 50% 50% 50% 50%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    box-shadow: 2px 5px 30px rgba(0,0,0,0.1);
+}
+.subcribe-input input{
+    width:100%;
+    height: 40px;
+    border: none;
+    color: #fff;
+    outline: none;
+    background-color: transparent;
+}
+.subcribe-btn{
+    width:120px;
+    height: 40px;
+    background-color: #6b60ec;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    font-size: 1rem;
+}
+.subcribe-btn:hover{
+    background-color:#6b60ec;
+    transition: all  ease 0.5s;
+}
+
+.copyright{
+    text-align: center !important;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+@media(max-width:1060px){
+    .footer-container{
+        max-width: 800px;
+    }
+}
+@media(max-width:850px){
+    footer{
+        padding-top: 50px
+    }
+    .footer-container{
+        width: 90%;
+    }
+    
+    .footer-content{
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-gap: 10px;
+    }
+    .footer-heading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+@media(max-width:680px){
+    .footer-heading h4{
+        font-size: 1.6rem;
+        line-height: 30px;
+    }
+    .footer-content{
+        margin-top: 40px;
+    }
+    .footer-heading h3{
+        font-size: 2.3rem;
+    }
+    .footer-container-flex{
+        flex-direction: column;
+    }
+    .footer-bottom{
+        flex-wrap: wrap;
+        justify-content:space-between;
+        align-items: center;
+        padding: 0px 20px;
+        margin-top: 50px;
+    }
+}
+@media(max-width:340px){
+    .footer-content{
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+    }
+    .footer-box{
+        margin: 0px;
+    }
+    .footer-box strong{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:600px){
+    .subcribe-input{
+		width:95%;
+	}
+	.subcribe-container h3{
+		font-size:1.4rem;
+		text-align: center;
+	}
+    .subcribe-container{
+        padding-top: 20px;
+        border-top: 1px solid #FFF;
+    }
+}
